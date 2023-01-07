@@ -8,16 +8,6 @@
 </head>
 <body>
     <script>
-        let monthInput = prompt('month')
-        let year = prompt('year')
-        let month = parseInt(monthInput)
-        let days = ''
-        let result = ''
-
-        let leapyear = (((year % 4 === 0) && (year % 100 != 0)) || (year % 400 == 0))
-
-        console.log(leapyear)
-
         if (month >= 1 && month <= 12) {
             if (month === 2) {
                 if (leapyear) days = '28 days'
@@ -30,15 +20,15 @@
 
         alert(result)
            
-        // let month = prompt("Please input number of a month:");
-        // let year = prompt("Please input a year:");
+        let month = prompt("Please input number of a month:");
+        let year = prompt("Please input a year:");
 
-        // if(month == 0 ) {alert("Invalid")}
-        // else if (month > 12) {alert("Invalid")}
-        // else if (month == 2 && (0 == year % 4) && (0 != year % 100) || (0 == year % 400)){alert("29 Days")}
-        // else if (month == 2 && !(0 == year % 4) && (0 != year % 100) || (0 == year % 400)) {alert("28 Days")}
-        // else if (month == 4, 6, 9, 11 && (0 == year % 4) && (0 != year % 100) || (0 == year % 400)) {alert("30 Days")}
-        // else alert("31 Days");
+        if(month == 0 ) {alert("Invalid")}
+        else if (month > 12) {alert("Invalid")}
+        else if (month == 2 && (0 == year % 4) && (0 != year % 100) || (0 == year % 400)){alert("29 Days")}
+        else if (month == 2 && !(0 == year % 4) && (0 != year % 100) || (0 == year % 400)) {alert("28 Days")}
+        else if (month == 4, 6, 9, 11 && (0 == year % 4) && (0 != year % 100) || (0 == year % 400)) {alert("30 Days")}
+        else alert("31 Days");
     </script>
 </body>
 </html>
