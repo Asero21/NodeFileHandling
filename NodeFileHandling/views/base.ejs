@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--<%= locals.title ? title : 'Login System' %>-->
+</head>
+<body>
+    <div>
+        <h2>Login System</h2>
+        <span>Log in for existing user</span>
+    </div>
+    <form action="/route/login" method="POST">
+        <div>
+            <input type="username" placeholder="Email" name="Username"></input>
+        </div>
+        <div>
+            <input type="password" name="Password" placeholder="Password">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
